@@ -131,5 +131,18 @@ footer {
     display: block;
 }
 
+
+.row-flex {
+    @include display(flex);
+    width: 100%;
+}
+
+.col-flex {
+    @include flex(1);
+    display: block;
+    width: 100%;
+}
+
+
 @import "fancybox-override";
 @import "mobile";
