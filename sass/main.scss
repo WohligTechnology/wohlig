@@ -142,7 +142,19 @@ footer {
     display: block;
     width: 100%;
 }
+.home-logo{
+      background-color: #02B0C2;
+      img{
+          margin: 0 auto;
+      }
+}
+.green-water{
+ background-color: #86C13F;
+}
 
+.blue-water{
+    background-color: #02B0C2;
+}
 
 @import "fancybox-override";
 @import "mobile";
