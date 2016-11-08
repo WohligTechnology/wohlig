@@ -131,29 +131,178 @@ footer {
     display: block;
 }
 
-
 .row-flex {
     @include display(flex);
     width: 100%;
+    .left {
+        background: #8c8c8c;
+        padding: 45px 0;
+    }
+    .right {
+        background: #dedcdd;
+        padding: 45px 0;
+    }
 }
 
 .col-flex {
     @include flex(1);
     display: block;
     width: 100%;
-}
-.home-logo{
-      background-color: #02B0C2;
-      img{
-          margin: 0 auto;
-      }
-}
-.green-water{
- background-color: #86C13F;
+    position: relative;
 }
 
-.blue-water{
+.home-logo {
     background-color: #02B0C2;
+    img {
+        margin: 0 auto;
+    }
+}
+
+.green-water {
+    background-color: #86C13F;
+}
+
+.blue-water {
+    background-color: #02B0C2;
+}
+
+.semi-circle-left {
+    background: #fff;
+    height: 88vh;
+    float: right;
+    width: 47vh;
+    border-radius: 150px 0 0 150px;
+    border-radius: 54vh 0 0 54vh;
+    position: relative;
+}
+
+.semi-circle-right {
+    background: #5b5b5b;
+    height: 88vh;
+    float: left;
+    width: 47vh;
+    border-radius: 150px 0 0 150px;
+    border-radius: 0 54vh 54vh 0;
+    position: relative;
+}
+
+.center-position {
+    width: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+}
+
+.three {
+    height: 100vh;
+    .sec-3 {
+        .center-position.about-detail {
+            padding-left: 50px;
+            .mission {
+                h3,
+                p {
+                    color: #82aa47;
+                    font-weight: bold;
+                }
+            }
+            .vision {
+                h3,
+                p {
+                    color: #0aacbb;
+                    font-weight: bold;
+                }
+            }
+        }
+        .center-position.team-detail {
+            padding-right: 50px;
+            .txt-color {
+                color: #fff;
+            }
+        }
+        .client-experience {
+            margin: 44px 0 0;
+            .flexslider-container {
+                .flexslider {
+                    border: none;
+                    margin: 0 0 60px;
+                    background: transparent;
+                    position: relative;
+                    zoom: 1;
+                    -webkit-border-radius: 4px;
+                    -moz-border-radius: 4px;
+                    border-radius: 4px;
+                    .slides {
+                        img {
+                            height: auto;
+                            border: 2px solid #fff;
+                            border-radius: 50%;
+                            width: 130px;
+                        }
+                        .designation {
+                            p {
+                                text-transform: uppercase;
+                                font-weight: 700;
+                            }
+                            .head1 {
+                                margin: 20px 5px 0;
+                            }
+                            .head2 {
+                                margin: 5px 5px 0;
+                            }
+                        }
+                    }
+                    .flex-control-paging li a {
+                        background: #0aacbb;
+                        &:hover {
+                            background: #0aacbb;
+                        }
+                        &:active {
+                            background: #fff;
+                        }
+                    }
+                }
+                .flex-direction-nav {
+                    display: none;
+                    bottom: -35px;
+                }
+                .flex-control-nav {
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.four {
+    height: 100vh;
+    .sec-4 {
+        .semi-circle-left {
+            background: #00c9dd;
+            // color: ;
+            height: 88vh;
+            z-index: -99;
+            float: right;
+            width: 47vh;
+            -moz-border-radius: 150px 0 0 150px;
+            border-radius: 54vh 0 0 54vh;
+        }
+        .semi-circle-right {
+            background: #93d742;
+            // color: #000000;
+            height: 88vh;
+            z-index: -99;
+            float: left;
+            width: 47vh;
+            -moz-border-radius: 150px 0 0 150px;
+            border-radius: 0 54vh 54vh 0;
+        }
+        .contact-form {
+            position: absolute;
+            top: 22%;
+            right: 3%;
+        }
+    }
 }
 
 @import "fancybox-override";
