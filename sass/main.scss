@@ -6,6 +6,7 @@
 @import "../bower_components/fancyBox/source/jquery.fancybox.css";
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
+@import "../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css";
 
 /* Bootstrap Variables Goes Here */
 
@@ -16,7 +17,7 @@ $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 body {
-    padding-top: 70px;
+    // padding-top: 70px;
 }
 
 img.loading {
@@ -134,14 +135,6 @@ footer {
 .row-flex {
     @include display(flex);
     width: 100%;
-    .left {
-        background: #8c8c8c;
-        padding: 45px 0;
-    }
-    .right {
-        background: #dedcdd;
-        padding: 45px 0;
-    }
 }
 
 .col-flex {
@@ -152,20 +145,17 @@ footer {
 }
 
 .home-logo {
-    background-color: #02B0C2;
-    img {
-        margin: 0 auto;
-    }
+    // background-color: #02B0C2;
+    // img {
+    //     margin: 0 auto;
+    // }
 }
 
-.green-water {
-    background-color: #86C13F;
-}
+.green-water {}
 
-.blue-water {
-    background-color: #02B0C2;
-}
-
+// .blue-water {
+//     background-color: #02B0C2;
+// }
 .semi-circle-left {
     background: #fff;
     height: 88vh;
@@ -188,14 +178,78 @@ footer {
 
 .center-position {
     width: 40vh;
+    height: 38vh;
     position: absolute;
     top: 50%;
     left: 50%;
     @include transform(translate(-50%, -50%));
 }
 
+.one {
+    height: 100vh;
+    position: relative;
+    .sec-1 {
+        .company-logo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include transform(translate(-50%, -50%));
+            .w-logo {
+                width: 500px;
+                margin: 0 auto;
+            }
+            .quotes {
+                margin: 60px 0;
+                font-size: 22px;
+                span {
+                    font-weight: 700;
+                }
+            }
+            .author {
+                font-size: 26px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.two {
+    height: 100vh;
+    .left {
+        background: #93d742;
+        padding: 60px 0;
+    }
+    .right {
+        background: #00c9dd;
+        padding: 60px 0;
+    }
+    .sec-2 {
+        .semi-circle-right.blue {
+            background: #fff;
+        }
+    }
+    .center-position {
+        height: initial;
+        li {
+            img {
+                border-radius: 50%;
+                border: 1px solid #93d742;
+                padding: 5px;
+            }
+        }
+    }
+}
+
 .three {
     height: 100vh;
+    .left {
+        background: #8c8c8c;
+        padding: 60px 0;
+    }
+    .right {
+        background: #dedcdd;
+        padding: 60px 0;
+    }
     .sec-3 {
         .center-position.about-detail {
             padding-left: 50px;
@@ -221,7 +275,7 @@ footer {
             }
         }
         .client-experience {
-            margin: 44px 0 0;
+            margin: 30px 0 0;
             .flexslider-container {
                 .flexslider {
                     border: none;
@@ -264,10 +318,10 @@ footer {
                 }
                 .flex-direction-nav {
                     display: none;
-                    bottom: -35px;
                 }
                 .flex-control-nav {
                     text-align: left;
+                    bottom: -35px;
                 }
             }
         }
@@ -277,31 +331,98 @@ footer {
 .four {
     height: 100vh;
     .sec-4 {
-        .semi-circle-left {
+        .left {
             background: #00c9dd;
-            // color: ;
-            height: 88vh;
-            z-index: -99;
-            float: right;
-            width: 47vh;
-            -moz-border-radius: 150px 0 0 150px;
-            border-radius: 54vh 0 0 54vh;
+            padding: 60px 0;
         }
-        .semi-circle-right {
+        .right {
             background: #93d742;
-            // color: #000000;
-            height: 88vh;
-            z-index: -99;
-            float: left;
-            width: 47vh;
-            -moz-border-radius: 150px 0 0 150px;
-            border-radius: 0 54vh 54vh 0;
+            padding: 60px 0;
         }
-        .contact-form {
-            position: absolute;
-            top: 22%;
-            right: 3%;
+        .semi-circle-left.contact {
+            background: #8eecf6;
         }
+        .semi-circle-right.contact-detail {
+            background: #aef365;
+        }
+        .form {
+            padding-left: 50px;
+            .form-control {
+                border-radius: 5px;
+            }
+            .form-group {
+                textarea {
+                    resize: none;
+                }
+            }
+            .btn-submit {
+                background: #757575;
+                color: #fff;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+        }
+        .contact {
+            .center-position {
+                text-align: right;
+                .txt-contact {
+                    margin: 0 0 50px;
+                    p {
+                        margin: 0;
+                        font-weight: 700;
+                        color: #757575;
+                    }
+                }
+            }
+        }
+        .contact-detail {
+            font-weight: 700;
+            color: #fff;
+            h3 {
+                font-weight: 700;
+                margin-top: 0;
+            }
+            .address {
+                margin: 0 0 10px;
+                p {
+                    margin: 0;
+                }
+            }
+            .map-image {
+                width: 200px;
+            }
+            .mail {
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                }
+            }
+        }
+        // .semi-circle-left {
+        //     background: #00c9dd;
+        //     // color: ;
+        //     height: 88vh;
+        //     z-index: -99;
+        //     float: right;
+        //     width: 47vh;
+        //     -moz-border-radius: 150px 0 0 150px;
+        //     border-radius: 54vh 0 0 54vh;
+        // }
+        // .semi-circle-right {
+        //     background: #93d742;
+        //     // color: #000000;
+        //     height: 88vh;
+        //     z-index: -99;
+        //     float: left;
+        //     width: 47vh;
+        //     -moz-border-radius: 150px 0 0 150px;
+        //     border-radius: 0 54vh 54vh 0;
+        // }
+        // .contact-form {
+        //     position: absolute;
+        //     top: 22%;
+        //     right: 3%;
+        // }
     }
 }
 

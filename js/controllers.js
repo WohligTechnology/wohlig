@@ -1,4 +1,4 @@
-angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper'])
+angular.module('phonecatControllers', ['templateservicemod', 'navigationservice', 'ui.bootstrap', 'ngAnimate', 'ngSanitize', 'angular-flexslider', 'ksSwiper', 'ngScrollbars'])
 
 .controller('HomeCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("home"); //Use same name of .html file
@@ -37,6 +37,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         three: "views/section/section3.html",
         four: "views/section/section4.html",
     };
+
+    $scope.config = {
+        autoHideScrollbar: false,
+        theme: 'light',
+        advanced: {
+            updateOnContentResize: true
+        },
+        setHeight: 100 vh,
+        scrollInertia: 0
+    }
 
 })
 
