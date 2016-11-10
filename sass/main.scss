@@ -7,6 +7,12 @@
 @import "../bower_components/swiper/dist/css/swiper.min.css";
 @import "../bower_components/smart-app-banner/smart-app-banner.css";
 @import "../bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css";
+// @import "http://allfont.net/allfont.css?fonts=arial-black)";
+@font-face {
+    font-family: "Arial Black";
+    src: url("../fonts/arial-black_[allfont.net].ttf");
+}
+
 
 /* Bootstrap Variables Goes Here */
 
@@ -185,6 +191,123 @@ footer {
     @include transform(translate(-50%, -50%));
 }
 
+.arc-text {
+    .badge1 {
+        position: relative;
+        // width: 400px;
+        border-radius: 50%;
+        transform: rotate(-83deg);
+        .enquiry {
+            color: #8eecf6;
+            span.char6 {
+                transform: rotate(33deg);
+            }
+            span.char7 {
+                transform: rotate(38deg);
+            }
+        }
+    }
+    h1 {
+        margin: 0;
+        font-family: 'Arial Black';
+        font-size: 56px;
+        color: #fff;
+        span {
+            // font: 26px Monaco, MonoSpace;
+            height: 488px;
+            position: absolute;
+            width: 20px;
+            left: 73px;
+            top: -8px;
+            transform-origin: bottom center;
+        }
+    }
+    span.char1 {
+        transform: rotate(6deg);
+    }
+    span.char2 {
+        transform: rotate(12deg);
+    }
+    span.char3 {
+        transform: rotate(18deg);
+    }
+    span.char4 {
+        transform: rotate(24deg);
+    }
+    span.char5 {
+        transform: rotate(30deg);
+    }
+    span.char6 {
+        transform: rotate(36deg);
+    }
+    span.char7 {
+        transform: rotate(42deg);
+    }
+}
+
+.arc-text-right {
+    .badge1 {
+        position: relative;
+        // width: 400px;
+        border-radius: 50%;
+        transform: rotate(31deg);
+        .reach {
+            color: #aef365;
+        }
+        .portfolio {
+            color: #fff;
+            span.char8 {
+                transform: rotate(47deg);
+            }
+            span.char9 {
+                transform: rotate(50deg);
+            }
+        }
+    }
+    h1 {
+        margin: 0;
+        font-family: 'Arial Black';
+        font-size: 56px;
+        color: #5b5b5b;
+        span {
+            // font: 26px Monaco, MonoSpace;
+            height: 488px;
+            position: absolute;
+            width: 20px;
+            top: 106px;
+            left: 302px;
+            transform-origin: bottom center;
+        }
+    }
+    span.char1 {
+        transform: rotate(6deg);
+    }
+    span.char2 {
+        transform: rotate(12deg);
+    }
+    span.char3 {
+        transform: rotate(18deg);
+    }
+    span.char4 {
+        transform: rotate(24deg);
+    }
+    span.char5 {
+        transform: rotate(30deg);
+    }
+    span.char6 {
+        transform: rotate(36deg);
+    }
+    span.char7 {
+        transform: rotate(42deg);
+    }
+    span.char8 {
+        transform: rotate(48deg);
+    }
+    span.char9 {
+        transform: rotate(54deg);
+    }
+}
+
 .one {
     height: 100vh;
     position: relative;
@@ -210,22 +333,47 @@ footer {
                 font-weight: 700;
             }
         }
+        .green1 {
+            position: absolute;
+            bottom: 0;
+            img {
+                height: 90vh;
+            }
+        }
+        .green2 {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            img {
+                height: 50vh;
+            }
+        }
     }
 }
 
 .two {
     height: 100vh;
     .left {
-        background: #93d742;
+        background: #86c140;
         padding: 60px 0;
     }
     .right {
-        background: #00c9dd;
+        background: #03b0c1;
         padding: 60px 0;
     }
     .sec-2 {
         .semi-circle-right.blue {
             background: #fff;
+        }
+        .g-wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .b-wave {
+            position: absolute;
+            bottom: 0;
+            right: 0;
         }
     }
     .center-position {
@@ -332,11 +480,11 @@ footer {
     height: 100vh;
     .sec-4 {
         .left {
-            background: #00c9dd;
+            background: #03b0c1;
             padding: 60px 0;
         }
         .right {
-            background: #93d742;
+            background: #86c140;
             padding: 60px 0;
         }
         .semi-circle-left.contact {

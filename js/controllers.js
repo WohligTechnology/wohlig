@@ -44,10 +44,13 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         advanced: {
             updateOnContentResize: true
         },
-        setHeight: 100 vh,
+        setHeight: '100vh',
         scrollInertia: 0
     }
 
+    // $(function () {
+    //     $("h1").lettering();
+    // });
 })
 
 .controller('FormCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
