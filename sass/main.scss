@@ -157,8 +157,6 @@ footer {
     // }
 }
 
-.green-water {}
-
 // .blue-water {
 //     background-color: #02B0C2;
 // }
@@ -311,6 +309,7 @@ footer {
 .one {
     height: 100vh;
     position: relative;
+    // background-image: url('../img/wave13.png');
     .sec-1 {
         .company-logo {
             position: absolute;
@@ -353,28 +352,63 @@ footer {
 
 .two {
     height: 100vh;
+    position: relative;
     .left {
         background: #86c140;
-        padding: 60px 0;
+        padding: 0 0 74px;
     }
     .right {
         background: #03b0c1;
-        padding: 60px 0;
+        padding: 0 0 74px;
+    }
+    .g-wave {
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // z-index: 99;
+        display: inline-block;
+        width: 50%;
+    }
+    .b-wave {
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // z-index: 99;
+        display: inline-block;
+        width: 50%;
+        margin-left: -4px;
     }
     .sec-2 {
-        .semi-circle-right.blue {
+        .semi-circle-right1.blue {
             background: #fff;
         }
-        .g-wave {
-            position: absolute;
-            bottom: 0;
-            left: 0;
+        .semi-circle-right1 {
+            height: 75vh;
+            float: left;
+            width: 40vh;
+            border-radius: 150px 0 0 150px;
+            border-radius: 0 40vh 40vh 0;
+            position: relative;
         }
-        .b-wave {
-            position: absolute;
-            bottom: 0;
-            right: 0;
+        .semi-circle-left1 {
+            background: #fff;
+            height: 75vh;
+            float: right;
+            width: 40vh;
+            border-radius: 150px 0 0 150px;
+            border-radius: 40vh 0 0 40vh;
+            position: relative;
         }
+        // .g-wave {
+        //     position: absolute;
+        //     bottom: 0;
+        //     left: 0;
+        // }
+        // .b-wave {
+        //     position: absolute;
+        //     bottom: 0;
+        //     right: 0;
+        // }
     }
     .center-position {
         height: initial;
