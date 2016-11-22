@@ -162,22 +162,34 @@ footer {
 // }
 .semi-circle-left {
     background: #fff;
-    height: 88vh;
+    /*height: 88vh;
     float: right;
     width: 47vh;
     border-radius: 150px 0 0 150px;
     border-radius: 54vh 0 0 54vh;
+    position: relative;*/
+    height: 140vh;
+    float: right;
+    width: 80%;
+    border-radius: 100vh 0 0 100vh;
     position: relative;
+    margin-bottom: 60px;
 }
 
 .semi-circle-right {
     background: #5b5b5b;
-    height: 88vh;
+    /*height: 88vh;
     float: left;
     width: 47vh;
     border-radius: 150px 0 0 150px;
     border-radius: 0 54vh 54vh 0;
+    position: relative;*/
+    height: 140vh;
+    float: left;
+    width: 80%;
+    border-radius: 0 100vh 100vh 0;
     position: relative;
+    margin-bottom: 60px;
 }
 
 .center-position {
@@ -194,14 +206,23 @@ footer {
         position: relative;
         // width: 400px;
         border-radius: 50%;
-        transform: rotate(-83deg);
-        .enquiry {
-            color: #8eecf6;
+        transform: rotate(-57deg);
+        .about-us {
+            color: #F5F5F5;
             span.char6 {
                 transform: rotate(33deg);
             }
             span.char7 {
-                transform: rotate(38deg);
+                transform: rotate(39deg);
+            }
+        }
+        .enquiry {
+            color: #8eecf6;
+            span.char6 {
+                transform: rotate(27deg);
+            }
+            span.char7 {
+                transform: rotate(33deg);
             }
         }
     }
@@ -216,30 +237,30 @@ footer {
             position: absolute;
             width: 20px;
             left: 73px;
-            top: -8px;
+            top: -35px;
             transform-origin: bottom center;
         }
     }
     span.char1 {
-        transform: rotate(6deg);
+        transform: rotate(0deg);
     }
     span.char2 {
-        transform: rotate(12deg);
+        transform: rotate(6deg);
     }
     span.char3 {
-        transform: rotate(18deg);
+        transform: rotate(12deg);
     }
     span.char4 {
-        transform: rotate(24deg);
+        transform: rotate(18deg);
     }
     span.char5 {
-        transform: rotate(30deg);
+        transform: rotate(24deg);
     }
     span.char6 {
-        transform: rotate(36deg);
+        transform: rotate(30deg);
     }
     span.char7 {
-        transform: rotate(42deg);
+        transform: rotate(36deg);
     }
 }
 
@@ -248,18 +269,18 @@ footer {
         position: relative;
         // width: 400px;
         border-radius: 50%;
-        transform: rotate(31deg);
+        transform: rotate(27deg);
         .reach {
             color: #aef365;
+            span.char6 {
+                transform: rotate(33deg);
+            }
+            span.char7 {
+                transform: rotate(39deg);
+            }
         }
         .portfolio {
             color: #fff;
-            span.char8 {
-                transform: rotate(47deg);
-            }
-            span.char9 {
-                transform: rotate(50deg);
-            }
         }
     }
     h1 {
@@ -272,37 +293,37 @@ footer {
             height: 488px;
             position: absolute;
             width: 20px;
-            top: 106px;
+            top: 28px;
             left: 302px;
             transform-origin: bottom center;
         }
     }
     span.char1 {
-        transform: rotate(6deg);
+        transform: rotate(0deg);
     }
     span.char2 {
-        transform: rotate(12deg);
+        transform: rotate(6deg);
     }
     span.char3 {
-        transform: rotate(18deg);
+        transform: rotate(12deg);
     }
     span.char4 {
-        transform: rotate(24deg);
+        transform: rotate(18deg);
     }
     span.char5 {
-        transform: rotate(30deg);
+        transform: rotate(24deg);
     }
     span.char6 {
-        transform: rotate(36deg);
+        transform: rotate(30deg);
     }
     span.char7 {
-        transform: rotate(42deg);
+        transform: rotate(36deg);
     }
     span.char8 {
-        transform: rotate(48deg);
+        transform: rotate(42deg);
     }
     span.char9 {
-        transform: rotate(54deg);
+        transform: rotate(48deg);
     }
 }
 
@@ -336,7 +357,7 @@ footer {
             position: absolute;
             bottom: 0;
             img {
-                height: 90vh;
+                /*height: 90vh;*/
             }
         }
         .green2 {
@@ -344,22 +365,24 @@ footer {
             bottom: 0;
             right: 0;
             img {
-                height: 50vh;
+                /*height: 50vh;*/
             }
         }
     }
 }
 
 .two {
-    height: 100vh;
-    position: relative;
+    .give-resp {
+        width: 100%;
+        height: auto;
+    }
     .left {
+        padding-top: 30px;
         background: #86c140;
-        padding: 0 0 74px;
     }
     .right {
+        padding-top: 30px;
         background: #03b0c1;
-        padding: 0 0 74px;
     }
     .g-wave {
         // position: absolute;
@@ -383,47 +406,61 @@ footer {
             background: #fff;
         }
         .semi-circle-right1 {
-            height: 75vh;
+            height: 140vh;
             float: left;
-            width: 40vh;
-            border-radius: 150px 0 0 150px;
-            border-radius: 0 40vh 40vh 0;
+            width: 80%;
+            border-radius: 0 100vh 100vh 0;
             position: relative;
+            margin-bottom: 60px;
         }
         .semi-circle-left1 {
             background: #fff;
-            height: 75vh;
+            height: 140vh;
             float: right;
-            width: 40vh;
-            border-radius: 150px 0 0 150px;
-            border-radius: 40vh 0 0 40vh;
+            width: 80%;
+            border-radius: 100vh 0 0 100vh;
             position: relative;
+            margin-bottom: 60px;
         }
-        // .g-wave {
-        //     position: absolute;
-        //     bottom: 0;
-        //     left: 0;
-        // }
-        // .b-wave {
-        //     position: absolute;
-        //     bottom: 0;
-        //     right: 0;
-        // }
-    }
-    .center-position {
-        height: initial;
-        li {
-            img {
-                border-radius: 50%;
-                border: 1px solid #93d742;
-                padding: 5px;
+        .client-images {
+            position: absolute;
+            right: 30px;
+            top: 10%;
+        }
+        .col-one {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 38%;
+            margin-right: -10px;
+            .img-holder {
+                margin-bottom: 0;
             }
+        }
+        .col-two {
+            display: inline-block;
+            vertical-align: top;
+            margin-top: 19%;
+            margin-right: -10px;
+        }
+        .col-three {
+            display: inline-block;
+        }
+        .img-holder {
+            border-radius: 50%;
+            border: 1px solid #93d742;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        .right-mar {
+            margin-right: 35px;
+        }
+        .left-mar {
+            margin-left: 35px;
         }
     }
 }
 
 .three {
-    height: 100vh;
     .left {
         background: #8c8c8c;
         padding: 60px 0;
@@ -433,28 +470,33 @@ footer {
         padding: 60px 0;
     }
     .sec-3 {
-        .center-position.about-detail {
-            padding-left: 50px;
+        .semi-circle-left {
+            background-color: #F5F5F5;
+        }
+        .about-detail {
+            padding-top: 35%;
+            padding-left: 30%;
+            padding-right: 10%;
+            font-weight: bold;
             .mission {
                 h3,
                 p {
                     color: #82aa47;
-                    font-weight: bold;
                 }
             }
             .vision {
                 h3,
                 p {
                     color: #0aacbb;
-                    font-weight: bold;
                 }
             }
         }
-        .center-position.team-detail {
-            padding-right: 50px;
-            .txt-color {
-                color: #fff;
-            }
+        .team-detail {
+            padding-top: 35%;
+            padding-left: 10%;
+            padding-right: 30%;
+            font-weight: bold;
+            color: #fff;
         }
         .client-experience {
             margin: 30px 0 0;
@@ -488,14 +530,11 @@ footer {
                             }
                         }
                     }
+                    .flex-control-paging li a.flex-active {
+                        background-color: #fff;
+                    }
                     .flex-control-paging li a {
                         background: #0aacbb;
-                        &:hover {
-                            background: #0aacbb;
-                        }
-                        &:active {
-                            background: #fff;
-                        }
                     }
                 }
                 .flex-direction-nav {
@@ -511,7 +550,6 @@ footer {
 }
 
 .four {
-    height: 100vh;
     .sec-4 {
         .left {
             background: #03b0c1;
@@ -521,11 +559,25 @@ footer {
             background: #86c140;
             padding: 60px 0;
         }
-        .semi-circle-left.contact {
+        .semi-circle-left {
             background: #8eecf6;
         }
-        .semi-circle-right.contact-detail {
+        .semi-circle-right {
             background: #aef365;
+        }
+        .enquiry-detail {
+            padding-top: 60%;
+            padding-left: 30%;
+            padding-right: 10%;
+            .thanks-note {
+                p {
+                    margin: 0;
+                }
+                font-weight: 700;
+                color: #757575;
+                text-align: right;
+                margin-bottom: 55px;
+            }
         }
         .form {
             padding-left: 50px;
@@ -544,20 +596,9 @@ footer {
                 text-transform: uppercase;
             }
         }
-        .contact {
-            .center-position {
-                text-align: right;
-                .txt-contact {
-                    margin: 0 0 50px;
-                    p {
-                        margin: 0;
-                        font-weight: 700;
-                        color: #757575;
-                    }
-                }
-            }
-        }
-        .contact-detail {
+        .reach-us-detail {
+            padding-top: 60%;
+            padding-left: 10%;
             font-weight: 700;
             color: #fff;
             h3 {
@@ -580,31 +621,6 @@ footer {
                 }
             }
         }
-        // .semi-circle-left {
-        //     background: #00c9dd;
-        //     // color: ;
-        //     height: 88vh;
-        //     z-index: -99;
-        //     float: right;
-        //     width: 47vh;
-        //     -moz-border-radius: 150px 0 0 150px;
-        //     border-radius: 54vh 0 0 54vh;
-        // }
-        // .semi-circle-right {
-        //     background: #93d742;
-        //     // color: #000000;
-        //     height: 88vh;
-        //     z-index: -99;
-        //     float: left;
-        //     width: 47vh;
-        //     -moz-border-radius: 150px 0 0 150px;
-        //     border-radius: 0 54vh 54vh 0;
-        // }
-        // .contact-form {
-        //     position: absolute;
-        //     top: 22%;
-        //     right: 3%;
-        // }
     }
 }
 
